@@ -52,4 +52,6 @@ RUN curl "https://raw.githubusercontent.com/FG-rps/test_repo/refs/heads/main/Cas
 RUN git clone https://github.com/LazyVim/starter ~/.config/nvim
 RUN rm ~/.config/nvim/init.lua
 RUN curl "https://raw.githubusercontent.com/FG-rps/test_repo/refs/heads/main/init.lua" > ~/.config/nvim/init.lua
+RUN mkdir -p ~/.config/tmux
+RUN curl "https://raw.githubusercontent.com/Elric-Matthew/experimental_repo/refs/heads/master/tmux.conf" > ~/.config/tmux/tmux.conf
 
