@@ -4,6 +4,7 @@ FROM fedora:latest
 RUN dnf -y makecache && \
     dnf -y install \
         axel \
+        tmux \
         zsh \
         git \
         wget \
@@ -51,3 +52,4 @@ RUN curl "https://raw.githubusercontent.com/FG-rps/test_repo/refs/heads/main/Cas
 RUN git clone https://github.com/LazyVim/starter ~/.config/nvim
 RUN rm ~/.config/nvim/init.lua
 RUN curl "https://raw.githubusercontent.com/FG-rps/test_repo/refs/heads/main/init.lua" > ~/.config/nvim/init.lua
+
